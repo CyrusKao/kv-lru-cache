@@ -3,7 +3,7 @@ export default class Cache<K, V> {
 	private readonly max: number;
 	private readonly map = new Map<K, V>();
 
-	constructor(target: number, max = Math.max(Math.round(target / 10), 1)) {
+	constructor(target: number, max = target + Math.max(Math.round(target / 10), 1)) {
 		if (max < target) {
 			throw new Error(`Max muse be >= target`);
 		}

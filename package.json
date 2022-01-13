@@ -1,6 +1,6 @@
 {
   "name": "kv-lru-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Key-value least-recently-used (LRU) cache module written in Typescript with zero dependencies.",
   "main": "build/index.js",
   "scripts": {
