@@ -2,6 +2,8 @@
 
 Key-value least-recently-used (LRU) cache module written in Typescript with zero dependencies.
 
+> See how it's implemented at [my blog post](https://nocache.org/p/build-a-key-value-lru-cache-module-in-node-js-with-typescript).
+
 ## Installation
 
 ```sh

@@ -29,10 +29,6 @@ export default class Cache<K, V> {
 		}
 	}
 
-	public has(key: K): boolean {
-		return this.map.has(key);
-	}
-
 	public get(key: K, update = true): V | undefined {
 		if (update) {
 			if (this.map.has(key)) {
@@ -48,6 +44,10 @@ export default class Cache<K, V> {
 		}
 
 		return this.map.get(key);
+	}
+
+	public has(key: K): boolean {
+		return this.map.has(key);
 	}
 
 	public delete(key: K): boolean {
@@ -69,6 +69,7 @@ export default class Cache<K, V> {
 	public keys(): IterableIterator<K> {
 		return this.map.keys();
 	}
+
 	public values(): IterableIterator<V> {
 		return this.map.values();
 	}
